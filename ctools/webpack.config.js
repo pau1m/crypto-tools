@@ -33,7 +33,8 @@ module.exports = {
     open: true,
     proxy: {
       '/api': 'http://localhost:1338'
-    }
+    },
+    disableHostCheck: true
   },
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),
